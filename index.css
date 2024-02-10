@@ -1,0 +1,198 @@
+  body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background: #f4f4f4;
+  }
+  .menu-bar {
+    background-color: #003366; /* Dark blue background */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  .menu-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  .menu-bar a:hover {
+    color: #a9ecff; /* Lighter blue on hover */
+  }
+  /* Rest of your styles */
+ 
+
+.navbar {
+  display: flex;
+  justify-content: center; /* Aligns children (nav items) in the center */
+  gap: 10px; /* Adjust the space between the boxes as needed */
+  padding: 20px;
+}
+
+ 
+
+  .nav-item { 
+        margin-right: 5px; /* Adjust this value to decrease the space to the right */
+  margin-left: 5px; 
+    border: 1px solid #ccc; 
+    text-align: center; 
+    padding: 10px;
+    transition: transform 0.2s; 
+    background: white; /* White background for nav items */
+  }
+
+
+
+
+  .nav-item:hover {
+    transform: scale(1.05); 
+  }
+  .navbar img { 
+    width: 200px; 
+    height: 200px; 
+    cursor: pointer; 
+  }
+  .full-image { text-align: center; margin-bottom: 20px; }
+  .full-image img { width: auto; max-width: 100%; }
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: #0056b3;
+  }
+
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap between images if needed */
+}
+
+.image-text-overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.image-text-overlay img {
+  width: 150px; /* Set your desired width */
+  height: 150px; /* Set your desired height */
+  transition: opacity 0.3s ease;
+}
+
+.overlay-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: black;
+  background: rgba(255, 255, 255, 0.8); /* White with a bit of transparency */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Ensure the mouse event goes to the image below */
+}
+
+.image-text-overlay:hover img {
+  opacity: 0;
+}
+
+.image-text-overlay:hover .overlay-text {
+  opacity: 1;
+}
+
+.text-container {
+  text-align: center; /* Centers the text */
+  margin-top: 20px; /* Adds space between the boxes and the text */
+  max-width: 400px; /* Sets the maximum width of the text container */
+  margin-left: auto; /* These two margins center the container */
+  margin-right: auto;
+  padding: 0 10px; /* Adds some padding on the sides */
+}
+
+.career-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.career-text {
+  flex: 1;
+  padding-right: 20px; /* Adjust as needed */
+}
+
+.career-image {
+  flex: 1;
+  text-align: right; /* Adjust as needed */
+}
+
+.career-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+ 
+ 
+
+/* Add other styling as needed to match the uploaded image */
+
+
+/* ... other styles ... */
+
+.info-circle {
+  display: inline-block;
+  background-color: blue; /* Your chosen color */
+  color: white; /* Text color */
+  border-radius: 50%;
+  width: 50px; /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+  text-align: center;
+  line-height: 50px; /* Adjust line height to match height for vertical center */
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+ 
+
+.info-title {
+  display: inline;
+  font-size: 18px; /* Adjust text size as needed */
+  vertical-align: top;
+}
+
+.info-item {
+  margin-bottom: 20px;
+}
+
+.info-text {
+  display: none;
+  margin-top: 10px;
+  margin-left: 60px; /* Adjust to align with the info-circle */
+}
+
+/* ... other styles ... */
+
+.circle-text {
+  display: block;
+  line-height: 50px; /* Match the height of the circle */
+  font-size: 24px; /* Adjust as needed */
+  /* Vertically center the text in the circle */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+

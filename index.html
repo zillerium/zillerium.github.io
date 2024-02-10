@@ -1,12 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello, World!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Navigation Example</title>
+<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is a simple "Hello, World!" website hosted on GitHub Pages.</p>
+
+<div class="menu-bar">
+  <a href="#About" onclick="changeContent('About')">About</a>
+  <a href="#Career" onclick="changeContent('Career')">Career</a>
+  <a href="#Showcase" onclick="changeContent('Showcase')">Showcase</a>
+</div>
+
+<div class="full-image" id="fullImageDisplay">
+  <img src="https://i.ibb.co/mbFntXV/zcareer2.webp" alt="Default Image">
+</div>
+
+<div class="header">
+  <h1>Trevor Lee Oakley</h1>
+</div>
+
+<div class="navbar">
+  <div class="nav-item">
+    <img src="https://i.ibb.co/mbFntXV/zcareer2.webp" alt="About" onclick="changeContent('About')">
+    <h3>About</h3>
+    <button class="button" onclick="changeContent('About')">Book Now</button>
+  </div>
+  <div class="nav-item">
+    <img src="https://i.ibb.co/KDTm4Rd/zcareer.webp" alt="Career" onclick="changeContent('Career')">
+    <h3>Career</h3>
+    <button class="button" onclick="changeContent('Career')">Book Now</button>
+  </div>
+  <div class="nav-item">
+    <img src="https://i.ibb.co/3dZJ6Bv/zcareer3.webp" alt="Showcase" onclick="changeContent('Showcase')">
+    <h3>Showcase</h3>
+    <button class="button" onclick="changeContent('Showcase')">Book Now</button>
+  </div>
+</div>
+
+ 
+<div id="About" class="content-section">
+  <h2 style="text-align:center;">About</h2>
+  <div class="image-row">
+    <div class="image-text-overlay" onmouseover="hoverEffect(this)" onmouseout="hoverEffectOut(this)">
+      <img src="https://i.ibb.co/yq3W6Dm/zuniversity.webp" alt="Academic">
+      <div class="overlay-text">
+          <ul>
+      <li>BSc Phyics</li>
+      <li>MSc Control Systems</li>
+      <li>GDL (Law)</li>
+ 
+    </ul>
+      </div>
+    </div>
+    <div class="image-text-overlay" onmouseover="hoverEffect(this)" onmouseout="hoverEffectOut(this)">
+      <img src="https://i.ibb.co/BLT4P9P/zstartups.webp" alt="Startup">
+      <div class="overlay-text">
+               <ul>
+      <li>E-commerce</li>
+      <li>NLP</li>
+      <li>Blockchains</li>
+ </ul>
+      
+      
+      </div>
+    </div>
+    <div class="image-text-overlay" onmouseover="hoverEffect(this)" onmouseout="hoverEffectOut(this)">
+      <img src="https://i.ibb.co/S59XnFJ/ztech.webp" alt="Tech">
+      <div class="overlay-text">
+                         <ul>
+      <li>.Net, C#, Windows</li>
+      <li>Linux, NodeJS, Express</li>
+      <li>Solidity, Java, Go</li>
+ </ul>
+      
+      </div>
+    </div>
+  </div>
+    <div class="text-container">
+  <p>I have worked across a number of sectors including monolithic designs, distributed systems, Big Data, AI, and with a range of languages such as Java, Go, Python, Javascript, Solidity, and more.</p>
+</div>
+
+ 
+</div>
+
+<div id="Career" class="content-section">
+  <div class="career-content">
+    <div class="career-text">
+      <h2>Career</h2>
+      <div class="info-item">
+        <div class="info-circle" onclick="toggleText('experienceText')"><span class="circle-text">&#x279C;</span>
+  </div>
+              <div class="info-title">DLTs</div> 
+        <p id="experienceText" class="info-text">I have a strong interest in DLTs and DeFi and now I work on DeFi Compositions with Derivatives.</p>
+      </div>
+      <div class="info-item">
+        <div class="info-circle" onclick="toggleText('teamText')"><span class="circle-text">&#x279C;</span></div>
+          <div class="info-title">AI</div> 
+        <p id="teamText" class="info-text">I have experience of deep learning, and the newest addition to AI systems, chatgpt</p>
+      </div>
+    </div>
+    <div class="career-image">
+      <img src="https://i.ibb.co/yq3W6Dm/zuniversity.webp" alt="Career Image">
+    </div>
+  </div>
+</div>
+
+ 
+
+
+<div id="Showcase" class="content-section">
+  <h2 style="text-align:center;">Showcase</h2>
+  <p>This is text explaining Showcase.</p>
+</div>
+
+<script src="index.js"></script>
+
 </body>
 </html>
