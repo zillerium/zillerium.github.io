@@ -196,3 +196,55 @@
   transform: translateY(-50%);
 }
 
+ .slider {
+  overflow: hidden;
+  position: relative;
+  width: 100vw; /* Use the full viewport width */
+  margin: 0 auto; /* Center the slider if needed */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.slider-container {
+  display: flex; /* Line up images horizontally */
+  will-change: transform; /* Optimize the sliding animation */
+  transition: transform 1s ease-in-out; /* Smooth sliding effect */
+}
+
+.slider img {
+  width: 100%; /* Each image takes the full width of the slider */
+  height: auto; /* Adjust height automatically to maintain aspect ratio */
+  flex: 0 0 100vw; /* Prevent images from shrinking and ensure each image takes full viewport width */
+  object-fit: cover; /* Cover the slider area without breaking aspect ratio */
+}
+
+
+.slider-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px; /* Adjust this value to center the arrows vertically */
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.left-arrow {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.right-arrow {
+  right: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.slider-arrow:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+

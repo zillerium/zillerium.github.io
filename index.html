@@ -3,49 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Image Navigation Example</title>
+<title>TL Oakley</title>
 <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
 
 <div class="menu-bar">
-  <a href="#About" onclick="changeContent('About')">About</a>
+  <a href="#About" onclick="changeContent('About')">About Me</a>
   <a href="#Career" onclick="changeContent('Career')">Career</a>
   <a href="#Showcase" onclick="changeContent('Showcase')">Showcase</a>
 </div>
 
-<div class="full-image" id="fullImageDisplay">
-  <img src="https://i.ibb.co/mbFntXV/zcareer2.webp" alt="Default Image">
+ 
+ 
+
+    <div id="fullImageDisplay" class="slider">
+  <div class="slider-container">
+    <!-- Images will be inserted here by JavaScript -->
+  </div>
+  <div class="slider-arrow left-arrow">&#10094;</div> <!-- Left arrow -->
+  <div class="slider-arrow right-arrow">&#10095;</div> <!-- Right arrow -->
 </div>
 
+
+    
 <div class="header">
   <h1>Trevor Lee Oakley</h1>
 </div>
 
+      
 <div class="navbar">
   <div class="nav-item">
-    <img src="https://i.ibb.co/mbFntXV/zcareer2.webp" alt="About" onclick="changeContent('About')">
-    <h3>About</h3>
-    <button class="button" onclick="changeContent('About')">Book Now</button>
+    <img src="https://i.ibb.co/9wXqzCt/aboutme.png" alt="About Me" onclick="changeContent('About')">
+    <h3>About Me</h3>
+    <button class="button" onclick="changeContent('About')">About Me</button>
   </div>
   <div class="nav-item">
-    <img src="https://i.ibb.co/KDTm4Rd/zcareer.webp" alt="Career" onclick="changeContent('Career')">
+    <img src="https://i.ibb.co/RTh2D2b/career.png" alt="Career" onclick="changeContent('Career')">
     <h3>Career</h3>
-    <button class="button" onclick="changeContent('Career')">Book Now</button>
+    <button class="button" onclick="changeContent('Career')">Career</button>
   </div>
   <div class="nav-item">
-    <img src="https://i.ibb.co/3dZJ6Bv/zcareer3.webp" alt="Showcase" onclick="changeContent('Showcase')">
+    <img src="https://i.ibb.co/wYZNfpf/Showcasethumbnail.png" alt="Showcase" onclick="changeContent('Showcase')">
     <h3>Showcase</h3>
-    <button class="button" onclick="changeContent('Showcase')">Book Now</button>
+    <button class="button" onclick="changeContent('Showcase')">Showcase</button>
   </div>
 </div>
 
- 
-<div id="About" class="content-section">
-  <h2 style="text-align:center;">About</h2>
+ <div id="About" class="content-section">
+  <h2 style="text-align:center;">About Me</h2>
   <div class="image-row">
     <div class="image-text-overlay" onmouseover="hoverEffect(this)" onmouseout="hoverEffectOut(this)">
-      <img src="https://i.ibb.co/yq3W6Dm/zuniversity.webp" alt="Academic">
+      <img src="https://i.ibb.co/dt6zVqs/academic.png" alt="Academic">
       <div class="overlay-text">
           <ul>
       <li>BSc Phyics</li>
@@ -56,19 +65,19 @@
       </div>
     </div>
     <div class="image-text-overlay" onmouseover="hoverEffect(this)" onmouseout="hoverEffectOut(this)">
-      <img src="https://i.ibb.co/BLT4P9P/zstartups.webp" alt="Startup">
+      <img src="https://i.ibb.co/1ZzzZPy/startup.png" alt="Startup">
       <div class="overlay-text">
                <ul>
       <li>E-commerce</li>
       <li>NLP</li>
       <li>Blockchains</li>
  </ul>
-      
-      
+
+       
       </div>
     </div>
     <div class="image-text-overlay" onmouseover="hoverEffect(this)" onmouseout="hoverEffectOut(this)">
-      <img src="https://i.ibb.co/S59XnFJ/ztech.webp" alt="Tech">
+      <img src="https://i.ibb.co/bzq1Vqc/zsoftware.png" alt="Tech">
       <div class="overlay-text">
                          <ul>
       <li>.Net, C#, Windows</li>
@@ -103,12 +112,12 @@
       </div>
     </div>
     <div class="career-image">
-      <img src="https://i.ibb.co/yq3W6Dm/zuniversity.webp" alt="Career Image">
+      <img src="https://i.ibb.co/XS1XyPD/careeroptions.png" alt="Career Image">
     </div>
   </div>
 </div>
 
- 
+  
 
 
 <div id="Showcase" class="content-section">

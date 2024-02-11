@@ -5,23 +5,23 @@ function changeContent(section) {
 
   switch (section) {
     case 'About':
-      imageSrc = 'https://i.ibb.co/mbFntXV/zcareer2.webp';
+      imageSrc = 'https://i.ibb.co/8XPF9Kb/zaboutus.png';
       titleText = 'About';
       break;
     case 'Career':
-      imageSrc = 'https://i.ibb.co/KDTm4Rd/zcareer.webp';
+      imageSrc = 'https://i.ibb.co/nrzXwtg/z1career.png';
       titleText = 'Career';
       break;
     case 'Showcase':
-      imageSrc = 'https://i.ibb.co/3dZJ6Bv/zcareer3.webp';
+      imageSrc = 'https://i.ibb.co/XtYGTjX/showcase.png';
       titleText = 'Showcase';
       break;
     default:
-      imageSrc = 'https://i.ibb.co/mbFntXV/zcareer2.webp';
+      imageSrc = 'https://i.ibb.co/8XPF9Kb/zaboutus.png';
       titleText = 'Default';
   }
-
-  // Update the image
+    
+   // Update the image
   document.getElementById('fullImageDisplay').innerHTML = '<img src="' + imageSrc + '" alt="' + section + ' Image">';
 
   // Update the content title
@@ -36,8 +36,44 @@ function changeContent(section) {
 
 // Initialize the default content
 document.addEventListener('DOMContentLoaded', function() {
-  changeContent('About');
+  const images = [
+    'https://i.ibb.co/8XPF9Kb/zaboutus.png',
+    'https://i.ibb.co/nrzXwtg/z1career.png',
+    'https://i.ibb.co/XtYGTjX/showcase.png'
+  ];
+  let currentImageIndex = 0;
+
+  const sliderContainer = document.querySelector('.slider-container');
+  const leftArrow = document.querySelector('.left-arrow');
+  const rightArrow = document.querySelector('.right-arrow');
+
+  function updateSlider() {
+    sliderContainer.style.transform = `translateX(-${currentImageIndex * 100}vw)`;
+  }
+
+  // Append all images to the slider container
+  images.forEach(src => {
+    const img = document.createElement('img');
+    img.src = src;
+    sliderContainer.appendChild(img);
+  });
+
+  leftArrow.addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+    updateSlider();
+  });
+
+  rightArrow.addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    updateSlider();
+  });
+
+  // Initialize the slider
+  updateSlider();
 });
+
+
+
 
 
 function hoverEffect(element) {
