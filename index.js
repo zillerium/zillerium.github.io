@@ -203,6 +203,7 @@ function toggleText(elementId) {
 }
 
 
+
 // Initialize elements to be hidden on page load if necessary
 document.addEventListener('DOMContentLoaded', function() {
   toggleText('experienceText');
