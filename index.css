@@ -2,7 +2,7 @@
     font-family: Arial, sans-serif; 
     margin: 0; 
     padding: 0; 
-    background: #f4f4f4;
+    background: #FFFFFF;
   }
   .menu-bar {
     background-color: #003366; /* Dark blue background */
@@ -43,6 +43,20 @@
   }
 
 
+.nav-item a.button {
+  display: inline-block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-item a.button:hover {
+  background-color: #0056b3;
+}
 
 
   .nav-item:hover {
@@ -248,3 +262,98 @@
 }
 
 
+ #Career {
+  max-width: 800px;
+  margin: 20px auto; /* Center the section with some space on top and bottom */
+  padding: 20px;
+}
+
+#Career .career-content {
+  display: flex;
+  align-items: center; /* Vertically center the flex items */
+  justify-content: space-between; /* Maintain space between text and image */
+  gap: 20px; /* Add some space between the text and the image */
+}
+
+#Career .career-text {
+  /* Adjust the width to fit the text content, or remove if you want it to flex */
+  flex: 1; 
+}
+
+#Career .career-image {
+  /* Adjust the width to fit the image content, or remove if you want it to flex */
+  flex: 1;
+  text-align: center; /* Center the image within its container */
+}
+
+#Career .career-image img {
+  max-width: 100%;
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
+
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px; /* Create space between the title and content */
+}
+
+.career-content {
+  display: flex;
+  align-items: center; /* Vertically align the flex items if they have different heights */
+  justify-content: space-between; /* Create space between text and image */
+}
+
+.career-text {
+  width: 50%; /* Adjust width as necessary */
+  padding-right: 20px; /* Create space between the text and the image */
+}
+
+.career-image {
+  width: 50%; /* Adjust width as necessary */
+  text-align: right; /* Align the image to the right of its container */
+}
+
+.career-image img {
+  max-width: 100%;
+  height: auto; /* Keep the image aspect ratio */
+  display: block; /* Remove bottom space under the image */
+}
+
+
+/* Responsive adjustments if necessary */
+@media (max-width: 768px) {
+  .career-content {
+    flex-direction: column;
+    align-items: flex-start; /* Align to the start on smaller screens */
+  }
+
+  .career-text, .career-image {
+    width: 100%; /* Full width on smaller screens */
+    padding-right: 0; /* Reset padding */
+    text-align: center; /* Center content on smaller screens */
+  }
+
+  .career-image {
+    order: -1; /* Image comes before text on smaller screens */
+  }
+}
+
+#Career .career-table {
+  width: 100%; /* Use the full width of the content-section */
+  border-collapse: collapse; /* Remove any default table spacing */
+}
+
+#Career .career-text,
+#Career .career-image {
+  vertical-align: top; /* Align the content to the top of the table cell */
+}
+
+#Career .career-image img {
+  width: 100%; /* Make the image responsive within the table cell */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+  

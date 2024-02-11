@@ -32,23 +32,30 @@
 </div>
 
       
-<div class="navbar">
+ <div class="navbar">
   <div class="nav-item">
-    <img src="https://i.ibb.co/9wXqzCt/aboutme.png" alt="About Me" onclick="changeContent('About')">
-    <h3>About Me</h3>
-    <button class="button" onclick="changeContent('About')">About Me</button>
+    <a href="#About" onclick="changeContent('About')">
+      <img src="https://i.ibb.co/9wXqzCt/aboutme.png" alt="About Me">
+      <h3>About Me</h3>
+    </a>
+    <a href="#About" onclick="changeContent('About')" class="button">About Me</a>
   </div>
   <div class="nav-item">
-    <img src="https://i.ibb.co/RTh2D2b/career.png" alt="Career" onclick="changeContent('Career')">
-    <h3>Career</h3>
-    <button class="button" onclick="changeContent('Career')">Career</button>
+    <a href="#Career" onclick="changeContent('Career')">
+      <img src="https://i.ibb.co/RTh2D2b/career.png" alt="Career">
+      <h3>Career</h3>
+    </a>
+    <a href="#Career" onclick="changeContent('Career')" class="button">Career</a>
   </div>
   <div class="nav-item">
-    <img src="https://i.ibb.co/wYZNfpf/Showcasethumbnail.png" alt="Showcase" onclick="changeContent('Showcase')">
-    <h3>Showcase</h3>
-    <button class="button" onclick="changeContent('Showcase')">Showcase</button>
+    <a href="#Showcase" onclick="changeContent('Showcase')">
+      <img src="https://i.ibb.co/wYZNfpf/Showcasethumbnail.png" alt="Showcase">
+      <h3>Showcase</h3>
+    </a>
+    <a href="#Showcase" onclick="changeContent('Showcase')" class="button">Showcase</a>
   </div>
 </div>
+
 
  <div id="About" class="content-section">
   <h2 style="text-align:center;">About Me</h2>
@@ -95,27 +102,37 @@
  
 </div>
 
-<div id="Career" class="content-section">
-  <div class="career-content">
-    <div class="career-text">
-      <h2>Career</h2>
-      <div class="info-item">
-        <div class="info-circle" onclick="toggleText('experienceText')"><span class="circle-text">&#x279C;</span>
-  </div>
-              <div class="info-title">DLTs</div> 
-        <p id="experienceText" class="info-text">I have a strong interest in DLTs and DeFi and now I work on DeFi Compositions with Derivatives.</p>
-      </div>
-      <div class="info-item">
-        <div class="info-circle" onclick="toggleText('teamText')"><span class="circle-text">&#x279C;</span></div>
+ 
+
+  <div id="Career" class="content-section">
+  <h2 class="section-title">Career</h2>
+  <table class="career-table">
+    <tr>
+      <td class="career-text">
+        <div class="info-item">
+          <div class="info-circle" onclick="toggleText('experienceText')">
+            <span class="circle-text">&#x279C;</span>
+          </div>
+          <div class="info-title">DLTs</div> 
+          <p id="experienceText" class="info-text">I have a strong interest in DLTs and DeFi and now I work on DeFi Compositions with Derivatives.</p>
+        </div>
+        <div class="info-item">
+          <div class="info-circle" onclick="toggleText('teamText')">
+            <span class="circle-text">&#x279C;</span>
+          </div>
           <div class="info-title">AI</div> 
-        <p id="teamText" class="info-text">I have experience of deep learning, and the newest addition to AI systems, chatgpt</p>
-      </div>
-    </div>
-    <div class="career-image">
-      <img src="https://i.ibb.co/XS1XyPD/careeroptions.png" alt="Career Image">
-    </div>
-  </div>
+          <p id="teamText" class="info-text">I have experience of deep learning, and the newest addition to AI systems, chatgpt</p>
+        </div>
+      </td>
+      <td class="career-image">
+        <img src="https://i.ibb.co/XS1XyPD/careeroptions.png" alt="Career Image">
+      </td>
+    </tr>
+  </table>
 </div>
+
+ 
+
 
   
 
